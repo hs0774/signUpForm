@@ -1,0 +1,66 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.BigContainer{
+    display: flex;
+
+}
+.img-resize{
+    width: 75px;
+    height: 75px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .45;
+    background-color: black;
+    height: 100px;
+}
+.Pic{
+    background-image: url("images/res.jpg");
+    height: 959px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+}
+.fonty{
+    color: rgb(255, 255, 255);
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: end;
+     padding-bottom: 20px;
+     padding-left: 32px;
+     padding-right: 32px;
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 20px;
+}
+.bottom{
+    
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.Form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.row{
+    background-color: black;
+}
+.box{
+    flex-grow: 1;
+}
+
