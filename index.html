@@ -20,36 +20,48 @@
             </div>
             <div class="Form">
                 <div class="top box">
-                    <p>This is not a real online service!You know you need something 
+                    <p>This is not a real online service! You know you need something 
                         like this in your life to help you realize your deepest dreams.
-                        Sign up now to get started.
+                        Sign up <em>now</em> to get started.
                     </p>
-                    <p> You know you want to </p>
+                    <p> You <em>know</em> you want to </p>
                 </div>
                 <div class="middle box">
-                    <p>Lets do this!</p>
-                    <div class="row1">
-                        <label for="first_name">First Name:</label>
-                        <input type="text" id="first_name" placeholder="Bob...">
-                        <label for="first_name">Last Name:</label>
-                        <input type="text" id="last_name" placeholder="Bobinson...">
+                    <p class="middlep">Lets do this!</p>
+                    <div class="row1 row">
+                       <div class="namebox">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" placeholder="Bob..." required>
+                       </div> 
+                       <div class="namebox">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" placeholder="Bobinson..." required>
+                       </div> 
                     </div>
-                    <div class="row2">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" placeholder="Bob@bob.com...">
-                        <label for="number">Phone Number</label>
-                        <input type="text" id="number" placeholder="Bob..." pattern="[0-9]+">                        
+                    <div class="row2 row">
+                        <div class="namebox">
+                         <label for="email">Email</label>
+                         <input type="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required placeholder="Bob@bob.com...">
+                        </div>
+                        <div class="namebox">
+                         <label for="number">Phone Number</label>
+                         <input type="tel" id="number" placeholder="Bob-Bob-Bob..." pattern="[0-9]+" minlength="10"> 
+                        </div>                        
                     </div>
-                    <div class="row3">
-                        <label for="password">Password</label>
-                        <input type="password" id="password">
-                        <label for="repassword">Confirm password</label>
-                        <input type="password" id="repassword">                     
+                    <div class="row3 row">
+                        <div class="namebox">
+                         <label for="password">Password</label>
+                         <input type="password" class="error" id="password" required>
+                        </div>
+                        <div class="namebox"> 
+                         <label for="repassword">Confirm password</label>
+                         <input type="password" id="repassword" required>      
+                        </div>                
                     </div>
                 </div>
                 <div class="bottom box">
-                    <button class="btn">Create Account</button>
-                    <p>Already have an account? <a href="google.com">Log in.</a></p>
+                    <button type="submit" class="btn">Create Account</button>
+                    <p>Already have an account? <a href="#">Log In</a></p>
                 </div>
             </div>
 
